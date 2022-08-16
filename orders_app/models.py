@@ -56,7 +56,7 @@ class DeviceInField(models.Model):
 def status_validator(order_status):
     if order_status not in ["open", "closed", "in progress", "need info"]:
         raise ValidationError(
-            gettext_lazy('%(orded_status)s is wrong order status'), #позволяет генерить сообщение для исключений
+            gettext_lazy('%(order_status)s is wrong order status'), #позволяет генерить сообщение для исключений
             params={'order_status': order_status},
         )
 
