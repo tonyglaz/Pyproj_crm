@@ -22,4 +22,4 @@ class DeviceInFieldAdmin(admin.ModelAdmin):
 admin.site.register(Order, OrderAdmin)
 admin.site.register(Device, DeviceAdmin)
 admin.site.register(Customer, CustomerAdmin)
-admin.site.register(DeviceInField, DeviceInField)
+admin.site.register(DeviceInField, DeviceInFieldAdmin)
